@@ -1,2 +1,4 @@
 # dockerfiles
-Collection of dockerfiles I use
+This is a repo to gather all the different dockerfiles I maintain.
+
+
