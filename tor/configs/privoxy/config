@@ -1,0 +1,7 @@
+listen-address 0.0.0.0:8118
+forward-socks5 / localhost:9050 .
+accept-intercepted-requests 1
+logdir /var/log/privoxy
+logfile privoxy.log
+debug 1 # Log the destination for each request Privoxy let through
+debug 1024 # Log the destination for requests Privoxy didn't let through, and the reason why.
