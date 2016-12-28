@@ -1,0 +1,15 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "gpavlidi/docker-wpa-cracker",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "8888"
+    }
+  ],
+  "Volumes": [
+  ],
+  "Logging": "/var/log/"
+}

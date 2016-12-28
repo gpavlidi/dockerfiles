@@ -1,0 +1,2 @@
+# Wpa Cracker
+wpa-cracker sets up a container running popular dictionary cracking tools [pyrit](https://code.google.com/p/pyrit/) and [hashcat](http://hashcat.net/oclhashcat/), both of them CUDA-compatible. It's developed with a 1-click Elastic Beanstalk deployment in mind.
