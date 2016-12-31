@@ -11,17 +11,19 @@ After **docker pull gpavlidi/adb**, follow the below 2 steps:
 
 - Launch the adb container from the directory that contains the .apk
 ```
-docker run --rm -it -v ${PWD}:/root/src --name adb gpavlidi/adb
+$ docker run --rm -it -v ${PWD}:/root/src --name adb gpavlidi/adb
 ```
 
 - Then use some of the below, depending on what you need to do
 ```
-adb kill-server
-adb start-server
-adb connect <ip-address-of-fire-tv>
-adb install <apk-file-name>
+$ adb kill-server
+$ adb start-server
+$ adb connect <ip-address-of-fire-tv>
+$ adb install <apk-file-name>
 # if upgrading
-adb install -r <apk-file-name>
+$ adb install -r <apk-file-name>
+# list all packages
+$ adb shell pm list packages
 # to uninstall
-adb uninstall -k org.xbmc.kodi
+$ adb uninstall -k org.xbmc.kodi
 ```
